@@ -47,10 +47,7 @@ jobs:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push emilianor81/docker-graphql:$NEW_VERSION
-        docker build -t emilianor81/docker-graphql:latest
-
-
-
+        docker push emilianor81/docker-graphql:latest
 
 
         
